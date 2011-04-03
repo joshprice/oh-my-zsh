@@ -7,3 +7,8 @@ end tell
 "
   echo "$terminal_clone_command" | osascript > /dev/null
 }
+
+# open up nicely formatted man pages in Preview.app
+function pman() {
+  man -t "${1}" | open -f -a /Applications/Preview.app
+}
